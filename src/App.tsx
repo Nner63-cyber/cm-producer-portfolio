@@ -14,11 +14,11 @@ function App() {
         <nav className="container-max px-4 py-4">
                                   <div className="flex items-center w-full">
               <div className="flex items-center space-x-4 -ml-8">
-                <img 
-                  src="/images/CM logo.png" 
-                  alt="CM Logo" 
-                  className="w-16 h-16 object-contain mt-1"
-                />
+                        <img 
+          src="/images/CM Logo.png" 
+          alt="CM Logo" 
+          className="w-16 h-16 object-contain mt-1"
+        />
                 <div className="text-2xl font-bold text-black whitespace-nowrap" style={{fontFamily: 'Logo, serif'}}>
                   Connor McCann PRODUCER
                 </div>

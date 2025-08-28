@@ -29,11 +29,11 @@ const Contact: React.FC = () => {
                 className="space-y-6 text-center lg:text-left"
               >
                 <div className="flex items-center space-x-6">
-                  <img 
-                    src="/images/CM logo.png" 
-                    alt="CM Logo" 
-                    className="w-40 h-40 object-contain flex-shrink-0"
-                  />
+                          <img 
+          src="/images/CM Logo.png" 
+          alt="CM Logo" 
+          className="w-40 h-40 object-contain flex-shrink-0"
+        />
                   <div className="space-y-4">
                     <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-black/20 rounded-lg flex items-center justify-center">
