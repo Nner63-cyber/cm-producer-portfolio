@@ -1,0 +1,196 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const CommercialClients: React.FC = () => {
+  // Placeholder data - you'll replace these with your actual client logos
+  const clients = [
+    {
+      id: 1,
+      name: "SAP",
+      logo: "/images/3_Client Logos/SAP.png"
+    },
+    {
+      id: 2,
+      name: "American Express",
+      logo: "/images/3_Client Logos/American Express.png"
+    },
+    {
+      id: 3,
+      name: "Radical Media",
+      logo: "/images/3_Client Logos/Radical Media.png"
+    },
+    {
+      id: 4,
+      name: "Tri Corporation",
+      logo: "/images/3_Client Logos/Tri Corporation.jpeg"
+    },
+    {
+      id: 5,
+      name: "Sirens Media",
+      logo: "/images/3_Client Logos/Sirens Media.jpeg"
+    },
+    {
+      id: 6,
+      name: "Story Syndicate",
+      logo: "/images/3_Client Logos/Story Syndicate.png"
+    },
+    {
+      id: 7,
+      name: "Conde Nast",
+      logo: "/images/3_Client Logos/Conde Nast.png"
+    },
+    {
+      id: 8,
+      name: "White Castle",
+      logo: "/images/3_Client Logos/White Castle.svg.png"
+    },
+    {
+      id: 9,
+      name: "Crayola",
+      logo: "/images/3_Client Logos/Crayola.jpg"
+    },
+    {
+      id: 10,
+      name: "Nerf",
+      logo: "/images/3_Client Logos/Nerf.svg.png"
+    },
+    {
+      id: 11,
+      name: "CDW",
+      logo: "/images/3_Client Logos/CDW.png"
+    },
+    {
+      id: 12,
+      name: "Ziploc",
+      logo: "/images/3_Client Logos/Ziploc.png"
+    },
+    {
+      id: 13,
+      name: "Sesshin",
+      logo: "/images/3_Client Logos/Sesshin.png"
+    },
+    {
+      id: 14,
+      name: "The Dinner Table",
+      logo: "/images/3_Client Logos/The Dinner Table.jpeg"
+    },
+    {
+      id: 15,
+      name: "Under Armour",
+      logo: "/images/3_Client Logos/Under Armour.png"
+    }
+  ];
+
+  return (
+    <section id="commercial-clients" className="section-padding bg-gray-100">
+      <div className="w-full">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16 px-4"
+        >
+                                <h2 className="heading-secondary mb-6 text-gray-800" style={{fontFamily: 'Logo, serif'}}>
+                        CLIENT HIGHLIGHTS
+                      </h2>
+        </motion.div>
+        
+        <div className="bg-gradient-to-br from-open-set-tertiary to-open-set-primary rounded-lg p-8">
+          <div className="container-max">
+            {/* Clients Grid - 3 lines with consistent spacing */}
+            <div className="space-y-8">
+              {/* First line - 4 logos */}
+              <div className="flex justify-center">
+                <div className="flex gap-8">
+                  {clients.slice(0, 4).map((client, index) => (
+                    <motion.div
+                      key={client.id}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.6, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="group w-56 h-56"
+                    >
+                      <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
+                        {/* Client Logo */}
+                        <img 
+                          src={client.logo} 
+                          alt={client.name}
+                          className="w-full h-32 object-contain mb-4"
+                        />
+                        {/* Client Name */}
+                        <h3 className="text-lg font-semibold text-black text-center">{client.name}</h3>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Second line - 7 logos */}
+              <div className="flex justify-center">
+                <div className="flex gap-8">
+                  {clients.slice(4, 11).map((client, index) => (
+                    <motion.div
+                      key={client.id}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.6, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="group w-56 h-56"
+                    >
+                      <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
+                        {/* Client Logo */}
+                        <img 
+                          src={client.logo} 
+                          alt={client.name}
+                          className="w-full h-32 object-contain mb-4"
+                        />
+                        {/* Client Name */}
+                        <h3 className="text-lg font-semibold text-black text-center">{client.name}</h3>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Third line - 4 logos */}
+              <div className="flex justify-center">
+                <div className="flex gap-8">
+                  {clients.slice(11, 15).map((client, index) => (
+                    <motion.div
+                      key={client.id}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.6, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="group w-56 h-56"
+                    >
+                      <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
+                        {/* Client Logo */}
+                        <img 
+                          src={client.logo} 
+                          alt={client.name}
+                          className="w-full h-32 object-contain mb-4"
+                          style={
+                            client.name === "Under Armour"
+                              ? { transform: 'scale(1.1)' }
+                              : {}
+                          }
+                        />
+                        {/* Client Name */}
+                        <h3 className="text-lg font-semibold text-black text-center">{client.name}</h3>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CommercialClients;

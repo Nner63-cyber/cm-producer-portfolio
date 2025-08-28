@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: film-producer-portfolio
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    workingDir: .
+    envVars:
+      - key: NODE_VERSION
+        value: "18.17.0"
