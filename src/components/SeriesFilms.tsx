@@ -161,9 +161,9 @@ const SeriesFilms: React.FC = () => {
       id: 11,
       title: "U.S. Secret Service - On The Front Line",
       category: "Documentary Series",
-      description: "N/A",
+      description: "With unprecedented backstage access, National Geographic captures the high-stakes, round-the-clock efforts of U.S. Secret Service agents—from explosive-sniffing K-9 teams to counter-snipers and threat analysts—as they shield the President on domestic soil and abroad.",
       image: "/images/2_Show Posters/U.S. Secret Service - On The Front Line.jpg",
-      seriesType: "Commercial",
+      seriesType: "Documentary Feature Film",
       productionCompany: "Nat Geo Studios/Nat Geo"
     },
     {

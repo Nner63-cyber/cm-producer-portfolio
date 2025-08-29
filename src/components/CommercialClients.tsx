@@ -110,7 +110,7 @@ const CommercialClients: React.FC = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="group w-56 h-56"
+                      className="group w-44 h-44"
                     >
                       <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
                         {/* Client Logo */}
@@ -137,7 +137,7 @@ const CommercialClients: React.FC = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="group w-56 h-56"
+                      className="group w-44 h-44"
                     >
                       <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
                         {/* Client Logo */}
@@ -164,7 +164,7 @@ const CommercialClients: React.FC = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="group w-56 h-56"
+                      className="group w-44 h-44"
                     >
                       <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
                         {/* Client Logo */}

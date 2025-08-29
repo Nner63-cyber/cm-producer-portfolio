@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
         
         <div className="bg-gradient-to-tr from-open-set-primary to-yellow-500 rounded-lg p-8">
           <div className="container-max">
-            <div className="grid lg:grid-cols-2 gap-16 items-center max-w-4xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-24 items-center max-w-4xl mx-auto">
               {/* Contact Information */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}

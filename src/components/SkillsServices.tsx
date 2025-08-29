@@ -18,7 +18,7 @@ const SkillsServices: React.FC = () => {
       shortDescription: 'Project inception and creative development',
       longDescription: 'From concept to script, we develop compelling stories that resonate with audiences and attract the right talent and financing.',
       skills: [
-        'In depth research',
+        'In-depth research',
         'Story development',
         'Pitch document building',
         'Treatment & script writing',
@@ -43,7 +43,7 @@ const SkillsServices: React.FC = () => {
       longDescription: 'Comprehensive pre-production planning ensures smooth execution and creative excellence throughout the production process.',
       skills: [
         'Budget planning & management',
-        'Shot-listing & Shoot Planning',
+        'Shot-listing & shoot planning',
         'Crew hiring',
         'Casting',
         'Location scouting & permits',
@@ -89,9 +89,9 @@ const SkillsServices: React.FC = () => {
       shortDescription: 'Editing, finishing and delivery',
       longDescription: 'Transform raw footage into compelling content with expert editing, sound design, and final delivery preparation.',
       skills: [
-        'Story Producing',
-        'Proficient in Premiere Pro, Avid Media Composer, Illustrator, Photoshop, InDesign, and ShotPut Pro.',
-        'Experienced with Python and VBA Coding Languages as well as Cursor coding assistant.',
+        'Story producing',
+        'Proficient in Premiere Pro, Avid Media Composer, Illustrator, Photoshop, InDesign, and ShotPut Pro',
+        'Experienced with Python and VBA Coding Languages as well as Cursor coding assistant',
         'Post schedule building & supervision',
         'Incorporating AI tools to enhance productivity',
         'Fact-checking & research',
