@@ -117,10 +117,8 @@ const CommercialClients: React.FC = () => {
                         <img 
                           src={client.logo} 
                           alt={client.name}
-                          className="w-full h-32 object-contain mb-4"
+                          className="w-full h-32 object-contain"
                         />
-                        {/* Client Name */}
-                        <h3 className="text-lg font-semibold text-black text-center">{client.name}</h3>
                       </div>
                     </motion.div>
                   ))}
@@ -144,10 +142,8 @@ const CommercialClients: React.FC = () => {
                         <img 
                           src={client.logo} 
                           alt={client.name}
-                          className="w-full h-32 object-contain mb-4"
+                          className="w-full h-32 object-contain"
                         />
-                        {/* Client Name */}
-                        <h3 className="text-lg font-semibold text-black text-center">{client.name}</h3>
                       </div>
                     </motion.div>
                   ))}
@@ -171,15 +167,13 @@ const CommercialClients: React.FC = () => {
                         <img 
                           src={client.logo} 
                           alt={client.name}
-                          className="w-full h-32 object-contain mb-4"
+                          className="w-full h-32 object-contain"
                           style={
                             client.name === "Under Armour"
                               ? { transform: 'scale(1.1)' }
                               : {}
                           }
                         />
-                        {/* Client Name */}
-                        <h3 className="text-lg font-semibold text-black text-center">{client.name}</h3>
                       </div>
                     </motion.div>
                   ))}
