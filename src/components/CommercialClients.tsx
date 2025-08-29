@@ -77,7 +77,7 @@ const CommercialClients: React.FC = () => {
     {
       id: 15,
       name: "Under Armour",
-      logo: "/images/3_Client Logos/Under Armour.png"
+      logo: "/images/3_Client Logos/Under Armour 2.png"
     }
   ];
 
