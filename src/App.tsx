@@ -23,7 +23,7 @@ function App() {
                   Connor McCann
                 </div>
               </div>
-                          <div className="hidden md:flex space-x-6 items-center flex-1 justify-center ml-2">
+                          <div className="hidden md:flex space-x-6 items-center ml-8">
                 <Link to="about" smooth={true} duration={500} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium whitespace-nowrap" style={{fontFamily: 'Logo, serif'}}>
                   ABOUT
                 </Link>
