@@ -128,7 +128,7 @@ const CommercialClients: React.FC = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: index * 0.05 }}
                   >
-                    <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
+                    <div className="bg-white rounded-lg p-6 shadow-lg w-full h-full">
                       <img 
                         src={client.logo} 
                         alt={client.name}
@@ -167,7 +167,7 @@ const CommercialClients: React.FC = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: index * 0.05 }}
                   >
-                    <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
+                    <div className="bg-white rounded-lg p-6 shadow-lg w-full h-full">
                       <img 
                         src={client.logo} 
                         alt={client.name}
