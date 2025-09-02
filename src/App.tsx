@@ -26,7 +26,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="hidden md:flex space-x-6 items-center">
+              <div className="hidden lg:flex space-x-6 items-center">
                 <Link to="about" smooth={true} duration={500} offset={-100} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium whitespace-nowrap" style={{fontFamily: 'Logo, serif'}}>
                   ABOUT
                 </Link>
@@ -44,13 +44,13 @@ function App() {
                 </Link>
               </div>
               
-              <div className="hidden md:flex flex-col text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
+              <div className="hidden lg:flex flex-col text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
                 <span>203-610-1017</span>
                 <span>connormccann63@gmail.com</span>
               </div>
             
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <button 
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="text-black hover:text-black/80"
@@ -64,7 +64,7 @@ function App() {
           
           {/* Mobile Menu Dropdown */}
           {isMobileMenuOpen && (
-            <div className="md:hidden bg-open-set-primary border-t border-black/20">
+            <div className="lg:hidden bg-open-set-primary border-t border-black/20">
               <div className="px-4 py-4 space-y-4">
                 <Link 
                   to="about" 
