@@ -5,17 +5,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="section-padding bg-gray-100">
       <div className="w-full">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16 px-4"
-        >
-          <h2 className="heading-secondary mb-6 text-gray-800" style={{fontFamily: 'Logo, serif'}}>
-            ABOUT
-          </h2>
-        </motion.div>
+
         
         <div className="bg-gradient-to-br from-open-set-primary to-open-set-secondary rounded-lg p-8">
           <div className="container-max">
@@ -63,13 +53,13 @@ const About: React.FC = () => {
                 
                 <div className="space-y-4 text-black">
                   <p>
-                    I am a creative producer and media strategist with a proven track record of delivering compelling content across documentary, scripted, branded, and educational formats. My expertise spans end-to-end production, from development and casting to directing, budgeting, and post.
+                    Connor is a creative producer and media strategist with a proven track record of delivering compelling content across documentary, scripted, branded, and educational formats. His expertise spans end-to-end production, from development and casting to directing, budgeting, and post.
                   </p>
                   <p>
-                    I'm adept at managing cross-functional teams, crafting narratives from complex research, and executing high-profile projects for clients like Netflix, HBO, and National Geographic. My skills include project development, visual storytelling, and building AI-enhanced workflows.
+                    He is adept at managing cross-functional teams, crafting narratives from complex research, and executing high-profile projects for clients like Netflix, HBO, and National Geographic. His skills include project development, visual storytelling, and building AI-enhanced workflows.
                   </p>
                   <p>
-                    I'm passionate about blending creativity with emerging technology to drive innovation and connect with diverse audiences across platforms.
+                    He is passionate about blending creativity with emerging technology to drive innovation and connect with diverse audiences across platforms.
                   </p>
                 </div>
                 

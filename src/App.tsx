@@ -20,7 +20,7 @@ function App() {
           className="w-16 h-16 object-contain mt-1"
         />
                 <div className="text-2xl font-bold text-black whitespace-nowrap" style={{fontFamily: 'Logo, serif'}}>
-                  Connor McCann PRODUCER
+                  Connor McCann
                 </div>
               </div>
                           <div className="hidden md:flex space-x-8 items-center flex-1 justify-center">
@@ -40,7 +40,7 @@ function App() {
                   <Link to="contact" smooth={true} duration={500} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium" style={{fontFamily: 'Logo, serif'}}>
                     CONTACT
                   </Link>
-                  <div className="flex flex-col text-sm text-black/80">
+                  <div className="flex flex-col text-sm text-black/80" style={{fontFamily: 'Logo, serif'}}>
                     <span className="font-medium">203-610-1017</span>
                     <span className="font-medium">connormccann63@gmail.com</span>
                   </div>

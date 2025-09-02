@@ -300,10 +300,10 @@ const SeriesFilms: React.FC = () => {
                     
                                                     {/* Overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-open-set-primary to-open-set-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                                      <div className="absolute bottom-0 left-0 right-0 p-3 text-black">
+                                                      <div className="absolute bottom-0 left-0 right-0 p-3 text-black text-center">
                         <h3 className="text-sm font-semibold mb-1">{project.title}</h3>
                                                             {project.seriesType && (
-                                      <div className="mb-2 -ml-2">
+                                      <div className="mb-2 flex justify-center">
                                         <span className="inline-block px-2 py-1 bg-open-set-primary text-black text-xs font-medium rounded">
                                           {project.seriesType}
                                         </span>
