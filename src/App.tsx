@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import About from './components/About';
 import SeriesFilms from './components/SeriesFilms';
@@ -7,6 +7,8 @@ import SkillsServices from './components/SkillsServices';
 import Contact from './components/Contact';
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen">
       {/* Navigation Header */}
@@ -49,13 +51,81 @@ function App() {
             
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <button className="text-black hover:text-black/80">
+              <button 
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-black hover:text-black/80"
+              >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
             </div>
           </div>
+          
+          {/* Mobile Menu Dropdown */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden bg-open-set-primary border-t border-black/20">
+              <div className="px-4 py-4 space-y-4">
+                <Link 
+                  to="about" 
+                  smooth={true} 
+                  duration={500} 
+                  offset={-100}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-black hover:text-black/80 transition-colors cursor-pointer font-medium" 
+                  style={{fontFamily: 'Logo, serif'}}
+                >
+                  ABOUT
+                </Link>
+                <Link 
+                  to="series-films" 
+                  smooth={true} 
+                  duration={500}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-black hover:text-black/80 transition-colors cursor-pointer font-medium" 
+                  style={{fontFamily: 'Logo, serif'}}
+                >
+                  FILMS & SERIES
+                </Link>
+                <Link 
+                  to="commercial-clients" 
+                  smooth={true} 
+                  duration={500}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-black hover:text-black/80 transition-colors cursor-pointer font-medium" 
+                  style={{fontFamily: 'Logo, serif'}}
+                >
+                  CLIENTS
+                </Link>
+                <Link 
+                  to="skills-services" 
+                  smooth={true} 
+                  duration={500}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-black hover:text-black/80 transition-colors cursor-pointer font-medium" 
+                  style={{fontFamily: 'Logo, serif'}}
+                >
+                  SKILLS & SERVICES
+                </Link>
+                <Link 
+                  to="contact" 
+                  smooth={true} 
+                  duration={500}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-black hover:text-black/80 transition-colors cursor-pointer font-medium" 
+                  style={{fontFamily: 'Logo, serif'}}
+                >
+                  CONTACT
+                </Link>
+                <div className="pt-4 border-t border-black/20">
+                  <div className="text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
+                    <div>203-610-1017</div>
+                    <div>connormccann63@gmail.com</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </nav>
       </header>
 
