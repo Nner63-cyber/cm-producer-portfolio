@@ -24,7 +24,7 @@ const About: React.FC = () => {
                           </h2>
             </motion.div>
 
-            <div className="flex lg:flex-row flex-col items-center lg:items-start justify-between">
+            <div className="flex lg:flex-row flex-col items-center lg:items-start">
               {/* Profile Image */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}

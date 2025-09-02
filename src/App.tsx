@@ -12,7 +12,7 @@ function App() {
       {/* Navigation Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-open-set-primary shadow-lg">
         <nav className="container-max px-4 py-4">
-                                  <div className="flex items-center w-full">
+                                  <div className="flex items-center justify-between w-full">
               <div className="flex items-center space-x-4">
                         <img 
           src="/images/CM Logo.png" 
@@ -23,7 +23,8 @@ function App() {
                   Connor McCann
                 </div>
               </div>
-                          <div className="hidden md:flex space-x-6 items-center ml-8">
+              
+              <div className="hidden md:flex space-x-6 items-center">
                 <Link to="about" smooth={true} duration={500} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium whitespace-nowrap" style={{fontFamily: 'Logo, serif'}}>
                   ABOUT
                 </Link>
@@ -36,15 +37,14 @@ function App() {
                 <Link to="skills-services" smooth={true} duration={500} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium whitespace-nowrap" style={{fontFamily: 'Logo, serif'}}>
                   SKILLS & SERVICES
                 </Link>
-                <div className="flex items-center space-x-8 flex-shrink-0">
-                  <Link to="contact" smooth={true} duration={500} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium" style={{fontFamily: 'Logo, serif'}}>
-                    CONTACT
-                  </Link>
-                  <div className="flex flex-col text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
-                    <span>203-610-1017</span>
-                    <span>connormccann63@gmail.com</span>
-                  </div>
-                </div>
+                <Link to="contact" smooth={true} duration={500} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium" style={{fontFamily: 'Logo, serif'}}>
+                  CONTACT
+                </Link>
+              </div>
+              
+              <div className="flex flex-col text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
+                <span>203-610-1017</span>
+                <span>connormccann63@gmail.com</span>
               </div>
             
             {/* Mobile menu button */}
