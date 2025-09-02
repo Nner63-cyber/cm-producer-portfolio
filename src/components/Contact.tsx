@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="section-padding bg-gray-300">
+    <section id="contact" className="section-padding bg-gray-400">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
                 </h2>
         </motion.div>
         
-        <div className="bg-gradient-to-tr from-open-set-primary to-yellow-500 rounded-lg p-8">
+        <div className="bg-gradient-to-bl from-open-set-quaternary to-open-set-primary rounded-lg p-8">
           <div className="container-max">
             <div className="grid lg:grid-cols-2 gap-24 items-center max-w-4xl mx-auto">
               {/* Contact Information */}

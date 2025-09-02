@@ -130,7 +130,7 @@ function App() {
       </header>
 
       {/* Main Content */}
-      <main className="pt-24 bg-gray-300">
+      <main className="pt-24 bg-gray-400">
         <About />
         <SeriesFilms />
         <CommercialClients />

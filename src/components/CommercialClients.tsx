@@ -90,7 +90,7 @@ const CommercialClients: React.FC = () => {
   const duplicatedSecondHalf = [...secondHalf, ...secondHalf, ...secondHalf];
 
   return (
-    <section id="commercial-clients" className="section-padding bg-gray-300">
+    <section id="commercial-clients" className="section-padding bg-gray-400">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -104,7 +104,7 @@ const CommercialClients: React.FC = () => {
                       </h2>
         </motion.div>
         
-        <div className="bg-gradient-to-br from-open-set-tertiary to-open-set-quaternary rounded-lg p-8">
+        <div className="bg-gradient-to-br from-open-set-tertiary to-open-set-secondary rounded-lg p-8">
           <div className="container-max">
             {/* First Carousel - Right to Left */}
             <div className="relative overflow-hidden mb-6">

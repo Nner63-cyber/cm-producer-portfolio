@@ -78,7 +78,7 @@ const SkillsServices: React.FC = () => {
     {
       id: 'post-production',
       title: 'Post-Production',
-      color: 'bg-yellow-500',
+      color: 'bg-open-set-quaternary',
       icon: (
         <img 
           src="/images/film-strip.png" 
@@ -101,7 +101,7 @@ const SkillsServices: React.FC = () => {
   ];
 
   return (
-    <section id="skills-services" className="section-padding bg-gray-300">
+    <section id="skills-services" className="section-padding bg-gray-400">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

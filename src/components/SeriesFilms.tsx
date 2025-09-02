@@ -241,7 +241,7 @@ const SeriesFilms: React.FC = () => {
   ];
 
   return (
-    <section id="series-films" className="section-padding bg-gray-300">
+    <section id="series-films" className="section-padding bg-gray-400">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -255,7 +255,7 @@ const SeriesFilms: React.FC = () => {
           </h2>
         </motion.div>
         
-        <div className="bg-gradient-to-bl from-open-set-secondary to-open-set-tertiary rounded-lg p-8">
+        <div className="bg-gradient-to-bl from-open-set-quaternary to-open-set-tertiary rounded-lg p-8">
                       <div className="max-w-full mx-auto px-4">
               {/* Projects Grid */}
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 gap-6 auto-rows-fr">
@@ -299,7 +299,7 @@ const SeriesFilms: React.FC = () => {
                     </div>
                     
                                                     {/* Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-open-set-primary to-open-set-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="absolute inset-0 bg-gradient-to-br from-open-set-primary to-open-set-quaternary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                                       <div className="absolute bottom-0 left-0 right-0 p-3 text-black text-center">
                         <h3 className="text-sm font-semibold mb-1">{project.title}</h3>
                                                             {project.seriesType && (
