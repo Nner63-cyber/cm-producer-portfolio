@@ -42,7 +42,7 @@ function App() {
                 </Link>
               </div>
               
-              <div className="flex flex-col text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
+              <div className="hidden md:flex flex-col text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
                 <span>203-610-1017</span>
                 <span>connormccann63@gmail.com</span>
               </div>
