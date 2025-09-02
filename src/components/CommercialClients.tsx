@@ -90,7 +90,7 @@ const CommercialClients: React.FC = () => {
   const duplicatedSecondHalf = [...secondHalf, ...secondHalf, ...secondHalf];
 
   return (
-    <section id="commercial-clients" className="section-padding bg-gray-400">
+    <section id="commercial-clients" className="section-padding bg-gray-200">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -128,7 +128,7 @@ const CommercialClients: React.FC = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: index * 0.05 }}
                   >
-                    <div className="bg-white rounded-lg p-6 shadow-lg w-full h-full">
+                    <div className="bg-gray-200 rounded-lg p-6 shadow-lg w-full h-full">
                       <img 
                         src={client.logo} 
                         alt={client.name}
@@ -167,7 +167,7 @@ const CommercialClients: React.FC = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: index * 0.05 }}
                   >
-                    <div className="bg-white rounded-lg p-6 shadow-lg w-full h-full">
+                    <div className="bg-gray-200 rounded-lg p-6 shadow-lg w-full h-full">
                       <img 
                         src={client.logo} 
                         alt={client.name}

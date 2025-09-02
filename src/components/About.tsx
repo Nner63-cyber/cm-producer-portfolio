@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="section-padding bg-gray-400">
+    <section id="about" className="section-padding bg-gray-200">
       <div className="w-full">
 
         

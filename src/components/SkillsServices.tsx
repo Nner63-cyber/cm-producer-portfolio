@@ -101,7 +101,7 @@ const SkillsServices: React.FC = () => {
   ];
 
   return (
-    <section id="skills-services" className="section-padding bg-gray-400">
+    <section id="skills-services" className="section-padding bg-gray-200">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
