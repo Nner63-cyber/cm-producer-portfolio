@@ -13,7 +13,7 @@ function App() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-open-set-primary shadow-lg">
         <nav className="container-max px-4 py-4">
                                   <div className="flex items-center w-full">
-              <div className="flex items-center space-x-4 -ml-8">
+              <div className="flex items-center space-x-4">
                         <img 
           src="/images/CM Logo.png" 
           alt="CM Logo" 
@@ -23,7 +23,7 @@ function App() {
                   Connor McCann
                 </div>
               </div>
-                          <div className="hidden md:flex space-x-12 items-center flex-1 justify-center">
+                          <div className="hidden md:flex space-x-8 items-center flex-1 justify-center ml-8">
                 <Link to="about" smooth={true} duration={500} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium whitespace-nowrap" style={{fontFamily: 'Logo, serif'}}>
                   ABOUT
                 </Link>
@@ -60,7 +60,7 @@ function App() {
       </header>
 
       {/* Main Content */}
-      <main className="pt-20 bg-gray-100">
+      <main className="pt-24 bg-gray-100">
         <About />
         <SeriesFilms />
         <CommercialClients />

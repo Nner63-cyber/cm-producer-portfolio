@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const CommercialClients: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   // Placeholder data - you'll replace these with your actual client logos
   const clients = [
     {
@@ -83,14 +81,8 @@ const CommercialClients: React.FC = () => {
     }
   ];
 
-  // Auto-rotating carousel functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % clients.length);
-    }, 2000); // Rotate every 2 seconds
-
-    return () => clearInterval(interval);
-  }, [clients.length]);
+  // Create duplicated clients for seamless loop
+  const duplicatedClients = [...clients, ...clients, ...clients];
 
   return (
     <section id="commercial-clients" className="section-padding bg-gray-100">
@@ -109,22 +101,23 @@ const CommercialClients: React.FC = () => {
         
         <div className="bg-gradient-to-br from-open-set-tertiary to-open-set-primary rounded-lg p-8">
           <div className="container-max">
-            {/* Auto-rotating Carousel */}
+            {/* Fluid Continuous Carousel */}
             <div className="relative overflow-hidden">
               <motion.div
                 className="flex gap-6"
                 animate={{
-                  x: -currentIndex * 200 // 200px per client (176px width + 24px gap)
+                  x: [0, -clients.length * 200] // Move by one full set of clients
                 }}
                 transition={{
-                  duration: 0.8,
-                  ease: "easeInOut"
+                  duration: clients.length * 2, // 2 seconds per client
+                  repeat: Infinity,
+                  ease: "linear"
                 }}
-                style={{ width: `${clients.length * 200}px` }}
+                style={{ width: `${duplicatedClients.length * 200}px` }}
               >
-                {clients.map((client, index) => (
+                {duplicatedClients.map((client, index) => (
                   <motion.div
-                    key={client.id}
+                    key={`${client.id}-${index}`}
                     className="flex-shrink-0 w-44 h-44"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}

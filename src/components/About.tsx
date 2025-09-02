@@ -24,7 +24,7 @@ const About: React.FC = () => {
                           </h2>
             </motion.div>
 
-            <div className="flex lg:flex-row flex-col items-center lg:items-start justify-center">
+            <div className="flex lg:flex-row flex-col items-center lg:items-start justify-between">
               {/* Profile Image */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
@@ -48,7 +48,7 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="lg:ml-8 space-y-4 max-w-lg"
+                className="lg:ml-8 space-y-4 max-w-xl"
               >
                 
                 <div className="space-y-4 text-black">
