@@ -7,9 +7,10 @@ module.exports = {
     extend: {
       colors: {
         'open-set': {
-          'primary': '#42a6c4',
-          'secondary': '#ff8981',
-          'tertiary': '#a1b986',
+          'primary': '#14a091',
+          'secondary': '#014539',
+          'tertiary': '#58687f',
+          'quaternary': '#ae3f3e',
           'black': '#000000',
           'light-gray': '#cccccc',
           'light-pink': '#ffe8e6',

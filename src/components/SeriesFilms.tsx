@@ -241,7 +241,7 @@ const SeriesFilms: React.FC = () => {
   ];
 
   return (
-    <section id="series-films" className="section-padding bg-gray-100">
+    <section id="series-films" className="section-padding bg-gray-300">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 25 }}

@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="section-padding bg-gray-100">
+    <section id="about" className="section-padding bg-gray-300">
       <div className="w-full">
 
         
-        <div className="bg-gradient-to-br from-open-set-primary to-open-set-secondary rounded-lg p-8">
+        <div className="bg-gradient-to-br from-open-set-primary to-open-set-quaternary rounded-lg p-8">
           <div className="container-max">
             <motion.div
               initial={{ opacity: 0, y: 30 }}

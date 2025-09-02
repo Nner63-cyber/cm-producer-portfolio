@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="section-padding bg-gray-100">
+    <section id="contact" className="section-padding bg-gray-300">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
