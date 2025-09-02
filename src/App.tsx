@@ -23,7 +23,7 @@ function App() {
                   Connor McCann
                 </div>
               </div>
-                          <div className="hidden md:flex space-x-8 items-center flex-1 justify-center">
+                          <div className="hidden md:flex space-x-12 items-center flex-1 justify-center">
                 <Link to="about" smooth={true} duration={500} className="text-black hover:text-black/80 transition-colors cursor-pointer font-medium whitespace-nowrap" style={{fontFamily: 'Logo, serif'}}>
                   ABOUT
                 </Link>
@@ -41,8 +41,8 @@ function App() {
                     CONTACT
                   </Link>
                   <div className="flex flex-col text-sm text-black/80" style={{fontFamily: 'Logo, serif'}}>
-                    <span className="font-medium">203-610-1017</span>
-                    <span className="font-medium">connormccann63@gmail.com</span>
+                    <span className="font-bold">203-610-1017</span>
+                    <span className="font-bold">connormccann63@gmail.com</span>
                   </div>
                 </div>
               </div>

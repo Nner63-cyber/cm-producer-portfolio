@@ -101,7 +101,7 @@ const SeriesFilms: React.FC = () => {
       description: "True stories of people who discovered their spouse's criminal past, exploring deception, betrayal, and survival.",
       image: "/images/2_Show Posters/I Was A Teenage Felon.jpeg",
       seriesType: "Documentary Series",
-      productionCompany: "Sirens Media/Bravo"
+      productionCompany: "OPC/VICE"
     },
     {
       id: 12,

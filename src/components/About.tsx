@@ -48,7 +48,7 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="lg:ml-8 space-y-4 max-w-md"
+                className="lg:ml-8 space-y-4 max-w-lg"
               >
                 
                 <div className="space-y-4 text-black">
