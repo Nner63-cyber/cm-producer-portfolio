@@ -37,7 +37,7 @@ const CommercialClients: React.FC = () => {
     {
       id: 7,
       name: "Conde Nast",
-      logo: "/images/3_Client Logos/Conde Nast-2.png"
+      logo: "/images/3_Client Logos/Conde Nast 3.png"
     },
     {
       id: 8,
@@ -47,7 +47,7 @@ const CommercialClients: React.FC = () => {
     {
       id: 9,
       name: "Crayola",
-      logo: "/images/3_Client Logos/Crayola-2.jpg"
+      logo: "/images/3_Client Logos/Crayola 3.png"
     },
     {
       id: 10,
@@ -57,12 +57,12 @@ const CommercialClients: React.FC = () => {
     {
       id: 11,
       name: "CDW",
-      logo: "/images/3_Client Logos/CDW-2.png.jpeg"
+      logo: "/images/3_Client Logos/CDW 3.png"
     },
     {
       id: 12,
       name: "Ziploc",
-      logo: "/images/3_Client Logos/Ziploc-2.jpg"
+      logo: "/images/3_Client Logos/Ziploc 3.png"
     },
     {
       id: 13,
