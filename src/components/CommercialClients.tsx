@@ -81,8 +81,13 @@ const CommercialClients: React.FC = () => {
     }
   ];
 
+  // Split clients into two groups
+  const firstHalf = clients.slice(0, Math.ceil(clients.length / 2));
+  const secondHalf = clients.slice(Math.ceil(clients.length / 2));
+  
   // Create duplicated clients for seamless loop
-  const duplicatedClients = [...clients, ...clients, ...clients];
+  const duplicatedFirstHalf = [...firstHalf, ...firstHalf, ...firstHalf];
+  const duplicatedSecondHalf = [...secondHalf, ...secondHalf, ...secondHalf];
 
   return (
     <section id="commercial-clients" className="section-padding bg-gray-100">
@@ -101,23 +106,62 @@ const CommercialClients: React.FC = () => {
         
         <div className="bg-gradient-to-br from-open-set-tertiary to-open-set-primary rounded-lg p-8">
           <div className="container-max">
-            {/* Fluid Continuous Carousel */}
+            {/* First Carousel - Right to Left */}
+            <div className="relative overflow-hidden mb-6">
+              <motion.div
+                className="flex gap-6"
+                animate={{
+                  x: [0, -firstHalf.length * 200] // Move by one full set of clients
+                }}
+                transition={{
+                  duration: firstHalf.length * 4, // 4 seconds per client (slower)
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                style={{ width: `${duplicatedFirstHalf.length * 200}px` }}
+              >
+                {duplicatedFirstHalf.map((client, index) => (
+                  <motion.div
+                    key={`first-${client.id}-${index}`}
+                    className="flex-shrink-0 w-44 h-44"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6, delay: index * 0.05 }}
+                  >
+                    <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 w-full h-full">
+                      <img 
+                        src={client.logo} 
+                        alt={client.name}
+                        className="w-full h-32 object-contain"
+                        style={
+                          client.name === "Under Armour"
+                            ? { transform: 'scale(1.1)' }
+                            : {}
+                        }
+                      />
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
+            
+            {/* Second Carousel - Left to Right */}
             <div className="relative overflow-hidden">
               <motion.div
                 className="flex gap-6"
                 animate={{
-                  x: [0, -clients.length * 200] // Move by one full set of clients
+                  x: [-secondHalf.length * 200, 0] // Move from left to right
                 }}
                 transition={{
-                  duration: clients.length * 2, // 2 seconds per client
+                  duration: secondHalf.length * 4, // 4 seconds per client (slower)
                   repeat: Infinity,
                   ease: "linear"
                 }}
-                style={{ width: `${duplicatedClients.length * 200}px` }}
+                style={{ width: `${duplicatedSecondHalf.length * 200}px` }}
               >
-                {duplicatedClients.map((client, index) => (
+                {duplicatedSecondHalf.map((client, index) => (
                   <motion.div
-                    key={`${client.id}-${index}`}
+                    key={`second-${client.id}-${index}`}
                     className="flex-shrink-0 w-44 h-44"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
