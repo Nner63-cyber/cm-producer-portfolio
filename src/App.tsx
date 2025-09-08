@@ -46,7 +46,7 @@ function App() {
               
               <div className="hidden lg:flex flex-col text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
                 <span>203-610-1017</span>
-                <span>connormccann63@gmail.com</span>
+                    <span>connor@mccann-films.com</span>
               </div>
             
             {/* Mobile menu button */}
@@ -120,7 +120,7 @@ function App() {
                 <div className="pt-4 border-t border-black/20">
                   <div className="text-sm text-black/80 font-bold" style={{fontFamily: 'Logo, serif'}}>
                     <div>203-610-1017</div>
-                    <div>connormccann63@gmail.com</div>
+                    <div>connor@mccann-films.com</div>
                   </div>
                 </div>
               </div>
