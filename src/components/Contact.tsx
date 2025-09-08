@@ -42,7 +42,6 @@ const Contact: React.FC = () => {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-black/70 uppercase tracking-wide" style={{fontFamily: 'Logo, serif'}}>EMAIL</p>
                         <p className="text-black font-medium" style={{fontFamily: 'Inter, Aptos, system-ui, sans-serif'}}>connor@mccann-films.com</p>
                       </div>
                     </div>
